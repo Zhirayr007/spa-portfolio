@@ -1,0 +1,139 @@
+.wrapper-who {
+	max-width: 1100px;
+	display: flex;
+	justify-content: space-between;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 100px;
+	background-color: #17181C;
+}
+
+.wrapper-who__img img {
+	width: 400px;
+	height: 400px;
+}
+
+.wrapper-who__text {}
+
+.hello {
+	/* width: 450px;
+	height: 180px; */
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 58px;
+	color: #FFFFFF;
+}
+
+.about-me {
+	margin-top: 100px;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 29px;
+	color: #FFFFFF;
+}
+
+.about-me p {
+	margin-bottom: 15px;
+}
+
+.about-me__green {
+	color: #50FF34;
+}
+
+.about-me__blue {
+	color: #73C4FF;
+}
+
+.about-me__yellow {
+	color: #ECFF15;
+}
+
+.wrapper-who__my-skills {}
+
+.skills-title {}
+
+.skills-round {}
+
+
+@media screen and (max-width: 1000px) {
+	.wrapper-who {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		/* margin-left: 120px;
+		margin-right: 120px; */
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 100px;
+	}
+
+	.wrapper-who__img img {
+		max-width: 550px;
+		max-height: 550px;
+	}
+
+	.wrapper-who__text {
+		margin-top: 50px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.hello {
+		/* width: 450px;
+		height: 180px; */
+		/* font-family: 'Inter';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 58px;
+		color: #FFFFFF; */
+	}
+
+	.about-me {
+		margin-top: 30px;
+		font-size: 18px;
+		/* margin-top: 100px;
+		font-family: 'Inter';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 29px;
+		color: #FFFFFF; */
+	}
+
+	.about-me p {
+		/* margin-bottom: 15px; */
+	}
+
+	.about-me__green {
+		/* color: #50FF34; */
+	}
+
+	.about-me__blue {
+		/* color: #73C4FF; */
+	}
+
+	.about-me__yellow {
+		/* color: #ECFF15; */
+	}
+
+	.wrapper-who__my-skills {}
+
+	.skills-title {}
+
+	.skills-round {}
+}
+
+@media screen and (max-width: 400px) {
+	.wrapper-who__img img {
+		max-width: 300px;
+		max-height: 300px;
+	}
+}

@@ -1,0 +1,110 @@
+.project-block {
+	width: 250px;
+	height: 350px;
+	background: #D9D9D9;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	padding: 5px;
+	/* background-image: url(../img/Templates.jpg);
+	background-size: contain; */
+}
+
+.project-block__title {
+	margin-top: 25px;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 58px;
+	color: #000000;
+	position: relative;
+}
+
+.project-block__title::after {
+	content: " ";
+	position: absolute;
+	top: 60px;
+	left: 30%;
+	width: 100px;
+	height: 2px;
+	background: red;
+}
+
+.project-block__description {
+	margin-top: 30px;
+	font-family: 'Inter';
+	font-style: italic;
+	font-weight: 400;
+	font-size: 16px;
+	text-align: center;
+
+	color: #000000;
+}
+
+.project-block__down {
+	width: 100%;
+	margin-right: 0px;
+	margin-top: 40px;
+	display: flex;
+	justify-content: right;
+	align-items: center;
+}
+
+.down2 {}
+
+.down2__text {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 29px;
+	color: #000000;
+	margin-right: 10px;
+}
+
+.down2__button {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+
+.down2__button img {
+	width: 30px;
+	height: 30px;
+}
+
+@media screen and (max-width: 1000px) {
+	.project-block {
+		margin-bottom: 20px;
+	}
+}
+
+@media screen and (max-width: 530px) {
+	.project-block {
+		margin-bottom: 20px;
+	}
+
+	.down2__text {
+		font-size: 18px;
+	}
+
+	.down2__button {
+		width: 40px;
+		height: 40px;
+	}
+
+}
+
+@media screen and (max-width: 450px) {
+	.down2__text {
+		font-size: 12px;
+	}
+
+	.down2__button {
+		width: 30px;
+		height: 30px;
+	}
+}
