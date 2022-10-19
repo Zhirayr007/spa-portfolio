@@ -15,14 +15,17 @@ function Header(props) {
 	const handlePageChangeIntro = () => {
 		props.onChange(1);
 		setColorText({ color: '#000000' });
+		setActiveState(true);
 	}
 	const handlePageChangeWho = () => {
 		props.onChange(2);
 		setColorText({ color: '#FFFFFF' });
+		setActiveState(true);
 	}
 	const handlePageChangeProjects = () => {
 		props.onChange(3);
 		setColorText({ color: '#F9E324' });
+		setActiveState(true);
 	}
 
 	return (

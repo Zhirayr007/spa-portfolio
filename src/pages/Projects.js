@@ -20,12 +20,12 @@ function Projects(props) {
 			img: require('../img/Templates.jpg')
 		},
 		{
-			title: "Noname",
+			title: "KONSTUCT",
 			text: "Верстка адаптивного и кроссбраузерного лендинга",
 			img: require('../img/Maketadaptiv.png')
 		},
 		{
-			title: "Noname",
+			title: "Moon River",
 			text: "Верстка лендинга",
 			img: require('../img/Moon River short.png')
 		},
