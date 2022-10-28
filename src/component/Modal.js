@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import parrow from "../img/project_arrow.svg"
 import '../style/modal.css';
 
-const Modal = ({ isVisible = false, title, text, img, onClose }) => {
+const Modal = ({ isVisible = false, title, text, img, href, onClose }) => {
 	const keydownHandler = ({ key }) => {
 		switch (key) {
 			case 'Escape':
@@ -26,7 +26,10 @@ const Modal = ({ isVisible = false, title, text, img, onClose }) => {
 					<div class="down-button">
 						<div className="down-button__text">посмотреть сайт</div>
 						<button className="down-button__button">
-							<img src={parrow} alt="" />
+							<a href={href}>
+								<img src={parrow} alt="" />
+							</a>
+
 						</button>
 					</div>
 				</div>

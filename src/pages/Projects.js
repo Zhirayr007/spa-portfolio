@@ -17,22 +17,26 @@ function Projects(props) {
 		{
 			title: "Винный магазин",
 			text: "Верстка адаптивного и кроссбраузерного лендинга",
-			img: require('../img/Templates.jpg')
+			img: require('../img/Templates.jpg'),
+			href: "#"
 		},
 		{
 			title: "KONSTUCT",
 			text: "Верстка адаптивного и кроссбраузерного лендинга",
-			img: require('../img/Maketadaptiv.png')
+			img: require('../img/Maketadaptiv.png'),
+			href: "#"
 		},
 		{
 			title: "Moon River",
 			text: "Верстка лендинга",
-			img: require('../img/Moon River short.png')
+			img: require('../img/Moon River short.png'),
+			href: "#"
 		},
 		{
-			title: "Noname",
-			text: "Адаптивный сайт, кроссбраузерный и т.д",
-			img: require('../img/Templates.jpg')
+			title: "QPICK",
+			text: "Интеренет могазин",
+			img: require('../img/QPICK.png'),
+			href: "https://vercel-r3gkk9ssv-zhirayr007.vercel.app"
 		}
 	]);
 	// 	{
@@ -60,7 +64,8 @@ function Projects(props) {
 		setModalObject({
 			title: card.title,
 			text: card.text,
-			img: card.img
+			img: card.img,
+			href: card.href
 		})
 	}
 
@@ -72,7 +77,7 @@ function Projects(props) {
 					<Project text={cardsObject[1].text} img={cardsObject[1].img} onClick={() => { opneModalwindow(cardsObject[1]) }} />
 					<Project text={cardsObject[2].text} img={cardsObject[2].img} onClick={() => { opneModalwindow(cardsObject[2]) }} />
 					<Project text={cardsObject[3].text} img={cardsObject[3].img} onClick={() => { opneModalwindow(cardsObject[3]) }} />
-					<Project text={cardsObject[0].text} img={cardsObject[0].img} onClick={() => { opneModalwindow(cardsObject[0]) }} />
+					<Project text={cardsObject[4].text} img={cardsObject[4].img} onClick={() => { opneModalwindow(cardsObject[4]) }} />
 					<Project text={cardsObject[0].text} img={cardsObject[0].img} onClick={() => { opneModalwindow(cardsObject[0]) }} />
 					<Project text={cardsObject[0].text} img={cardsObject[0].img} onClick={() => { opneModalwindow(cardsObject[0]) }} />
 					<Project text={cardsObject[0].text} img={cardsObject[0].img} onClick={() => { opneModalwindow(cardsObject[0]) }} />
@@ -83,6 +88,7 @@ function Projects(props) {
 					title={modalObject.title}
 					text={modalObject.text}
 					img={modalObject.img}
+					href={modalObject.href}
 					onClose={() => setModal(false)}
 				/>
 			</div>
