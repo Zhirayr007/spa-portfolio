@@ -34,7 +34,7 @@ function Projects(props) {
 		},
 		{
 			title: "QPICK",
-			text: "Интеренет могазин",
+			text: "Интеренет магазин",
 			img: require('../img/QPICK.png'),
 			href: "https://vercel-r3gkk9ssv-zhirayr007.vercel.app"
 		}
