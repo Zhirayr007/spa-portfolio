@@ -45,7 +45,7 @@ header {
 }
 
 .list a:hover {
-	text-decoration: underline;
+	text-decoration: none;
 
 }
 
@@ -117,8 +117,7 @@ header {
 	}
 
 	.list a:hover {
-		/* text-decoration: underline; */
-
+		text-decoration: none;
 	}
 
 	.contact {

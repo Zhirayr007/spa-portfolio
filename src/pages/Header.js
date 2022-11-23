@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
 import Intro from './Intro';
 import Who from './Who';
@@ -11,19 +11,37 @@ function Header(props) {
 	let [colorText, setColorText] = useState({
 		color: '#000'
 	});
+	const [count, setCount] = useState(true);
+	useEffect(() => {
+		BackgroundChangeTwo();
+		setCount(count => !count);
+	}, [count])
+	const BackgroundChangeTwo = () => {
+		let href = window.location.href;
+		if (href == 'https://spa-portfolio-blond.vercel.app/intro') {
+			handlePageChangeIntro();
+		}
+		if (href == 'https://spa-portfolio-blond.vercel.app/who') {
+			handlePageChangeWho();
+		}
+		if (href == 'https://spa-portfolio-blond.vercel.app/projects') {
+			handlePageChangeProjects();
+		}
+	}
+
 
 	const handlePageChangeIntro = () => {
-		props.onChange(1);
+		props.onChange();
 		setColorText({ color: '#000000' });
 		setActiveState(true);
 	}
 	const handlePageChangeWho = () => {
-		props.onChange(2);
+		props.onChange();
 		setColorText({ color: '#FFFFFF' });
 		setActiveState(true);
 	}
 	const handlePageChangeProjects = () => {
-		props.onChange(3);
+		props.onChange();
 		setColorText({ color: '#F9E324' });
 		setActiveState(true);
 	}
@@ -39,7 +57,7 @@ function Header(props) {
 						<ul className="list"  >
 							<li onClick={handlePageChangeIntro}><Link style={colorText} to="/intro">INTRO</Link></li>
 							<li onClick={handlePageChangeWho}><Link style={colorText} to="/who" >WHO</Link></li>
-							<li onClick={handlePageChangeProjects}><Link style={colorText} to="/projects" href="">PROJECTS</Link></li>
+							<li onClick={handlePageChangeProjects}><Link style={colorText} to="/projects" >PROJECTS</Link></li>
 						</ul>
 					</nav>
 					<div className="contact" style={colorText}>

@@ -1,31 +1,35 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import './style/null.css';
 import Header from './pages/Header';
 import './App.css'
 
 function App() {
-	let [backgroundObject, setBackgroundObject] = useState({
+	const [backgroundObject, setBackgroundObject] = useState({
 		backgroundColor: '#F9E324'
 	});
+
 	//функция для смены цвета фона
-	const handleBackgroundChange = (page) => {
-		console.log('hello');
-		if (page == 1) {
+	const BackgroundChange = () => {
+		let href = window.location.href;
+		if (href == 'https://spa-portfolio-blond.vercel.app/intro') {
 			setBackgroundObject({ backgroundColor: '#F9E324' })
 		}
-		if (page == 2) {
+		if (href == 'https://spa-portfolio-blond.vercel.app/who') {
 			setBackgroundObject({ backgroundColor: '#17181C' })
 		}
-		if (page == 3) {
+		if (href == 'https://spa-portfolio-blond.vercel.app/projects') {
 			setBackgroundObject({ backgroundColor: '#1745EB' })
 		}
 	}
 
 	return (
-		<div className="App" style={backgroundObject}>
+		<div className="App" style={backgroundObject} >
 			<BrowserRouter>
-				<Header onChange={handleBackgroundChange} />
+				<Header
+					//onChange={handleBackgroundChange} 
+					onChange={BackgroundChange}
+				/>
 			</BrowserRouter>
 		</div>
 

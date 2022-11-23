@@ -18,13 +18,14 @@ function Projects(props) {
 			title: "Винный магазин",
 			text: "Верстка адаптивного и кроссбраузерного лендинга",
 			img: require('../img/Templates.jpg'),
-			href: "#"
+			href: "https://zhirayr007.github.io/Wine-Shop",
+			comment: " "
 		},
 		{
 			title: "KONSTUCT",
 			text: "Верстка адаптивного и кроссбраузерного лендинга",
 			img: require('../img/Maketadaptiv.png'),
-			href: "#"
+			href: " https://zhirayr007.github.io/Konstruct"
 		},
 		{
 			title: "Moon River",
